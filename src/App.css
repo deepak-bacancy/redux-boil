@@ -1,0 +1,108 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.ul-list {
+  list-style: none;
+}
+
+.back {
+  display: flex;
+}
+
+.back a {
+  display: inline;
+  color: #fff;
+  padding: 13px;
+  background-color: #000;
+  text-decoration: none;
+  justify-content: left;
+  margin-left: 40px;
+}
+
+.list {
+  display: "flex" ;
+  width: 200px ; 
+  height: 300px;
+  margin: 10px;
+  border: 1px solid;
+  padding: 15px;
+  float: left;
+  color: #000;
+  text-decoration: none;
+}
+.trun {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 8px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.ul-list a:link ,  .ul-list a:active , .ul-list a:hover {
+  text-decoration: none;
+  text-transform: capitalize;
+  background: black;
+  display: block;
+  padding: 8px;
+  color: #fff;
+}
+
+
+.block-with-text {
+  overflow: hidden;
+  position: relative;
+  line-height: 1.2em;
+  max-height: 70px;
+  text-align: justify;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.block-with-text:after {
+  content: '...';
+  position: absolute;
+  right: 15px;
+  bottom: -4px;
+  background: linear-gradient(to right, #fffff2, #fff, #fff, #fff);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-float infinite 3s ease-in-out;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: rgb(112, 76, 182);
+}
+
+@keyframes App-logo-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
